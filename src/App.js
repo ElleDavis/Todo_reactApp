@@ -9,7 +9,8 @@ class App extends Component{
     return (
       <div className= "App">
         <Navbar />
-        <ToDosList todosData={todosData} />
+       {todosData && <ToDosList todosData={todosData} />}
+       
       </div>
     )
   }
